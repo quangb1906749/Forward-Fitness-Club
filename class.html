@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- Nguyen Thanh Quang - B1906749
+	13/5/2021-->
+<html lang="en"> <!--Khai báo ngôn ngữ của trang web là tiếng Anh-->
+<head>
+	<link rel="stylesheet" href="css/style.css"> <!--Liên kết đến tập tin css-->
+	<title>Forward Fitness Club</title> <!--Tiêu đề trang web-->
+	<meta charset="utf-8"> <!--Sử dụng bộ mã Unicode-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--thiết lập cho trang web hiển thị tương ứng với kích thước của từng thiết bị khác nhau. Đặt chiều rộng của trang web theo chiều rộng màn hình của thiết bị. Và thiết lập mức phóng ban đầu-->
+	<meta name="description" content="Forward Fitness Club is an elite fitness center dedicated to helping our clients achieve their fitness and nutrition goals. We provide state-of-the-art fitness equipment, group fitness classes, and nutrition planning.">
+	<!--Meta description mô tả nội dung của một trang web. Các công cụ tìm kiếm hiển thị meta description trong kết quả khi nó chứa các từ khóa đang được người dùng truy vấn.-->
+</head>
+<body>
+
+	<div id="container"> <!--Sử dụng container để định dạng phần body của trang web-->
+	
+
+	<!--Sử dụng header để hiển thị logo trang web-->
+	<header>
+		<a href="index.html"><img src="images/ffc_logo.png" alt="Forward Fitness Club Logo"></a>
+	</header>
+	
+	<!--Sử dụng nav để hiển các liên kết đến các trang khác trong website-->
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="class.html">Classes</a></li>
+			<li><a href="nutrition.html">Nutrition</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	
+	<!-- Classes Page Banner -->
+	<div id="banner" class="desktop">
+		<img src="images/classesBanner.jpg" alt="fitness classes banner image">
+	</div>
+	
+	<!-- Sử dụng vùng main để thêm nội dung chính của trang web-->
+	<main>
+		<!--Hiển thị thông tin lớp học cho thiết bị điện thoại-->
+		<div class="mobile">
+		
+			<h3>Group Fitness Clases</h3>
+			<p>Boot Camp: TR 5am &amp; 5pm</p>
+			<p>Cardio: MWF 6am &amp; 6pm</p>
+			<p>Kickboxing: MWF 8am &amp; 7:15pm</p>
+			<p>Spinning: TR 6am &amp; 6pm</p>
+			<p>Yoga: TR 6am &amp; 6pm</p>
+			<p>Zumba: MWF 7am &amp; 6pm</p>
+			
+		</div>
+		
+		
+		<!--Hiển thị thông tin lớp học cho máy tính và máy tính bảng-->
+		<div class="desktop">
+		<!--Trình bày thông tin lớp học bằng bảng-->
+			<table><!-- Start Table -->
+				<caption>Group Fitness Class Schedule</caption> <!--Thêm tên bảng-->
+				<tr><!--Hàng 1 hiển thị tiêu đề các bảng-->
+					<th>Class</th>
+					<th>Days</th>
+					<th>Times</th>
+					<th>Instructor</th>
+					<th>Room</th>
+				</tr>
+				<tr><!--Hàng 2 hiển thị thông tin lớp học boot camp-->
+					<td>Boot Camp</td>
+					<td>Tue, Thu</td>
+					<td>5:00am, 5:00pm</td>
+					<td>Lawrence</td>
+					<td>B</td>
+				</tr>
+				<tr><!--Hàng 3 hiển thị thông tin lớp học cardio-->
+					<td>Cardio</td>
+					<td>Mon, Wed, Fri</td>
+					<td>6:00am, 6:00pm</td>
+					<td>Schultz</td>
+					<td>B</td>
+				</tr>
+				<tr><!--Hàng 4 hiển thị thông tin lớp học Spinning-->
+					<td>Spinning</td>
+					<td>Tue, Thu</td>
+					<td>6:00am, 6:00pm</td>
+					<td>Roberts</td>
+					<td>A</td>
+				</tr>
+				<tr><!--Hàng 5 hiển thị thông tin lớp học Kickboxing-->
+					<td>Kickboxing</td>
+					<td>Mon, Wed, Fri</td>
+					<td>8:00am, 7:15pm</td>
+					<td>Lawrence</td>
+					<td>A</td>
+				</tr>
+				<tr><!--Hàng 6 hiển thị thông tin lớp học Yoga-->
+					<td>Yoga</td>
+					<td>Tue, Thu</td>
+					<td>6:00am, 6:00pm</td>
+					<td>Schultz</td>
+					<td>B</td>
+				</tr>
+				<tr><!--Hàng 7 hiển thị thông tin lớp học zumba-->
+					<td>Zumba</td>
+					<td>Mon, Wed, Fri</td>
+					<td>7:00am, 6:00pm</td>
+					<td>Roberts</td>
+					<td>A</td>
+				</tr>
+				
+			</table>
+	</main>
+	
+	<footer> <!--Phần footer hiển thị bản quyền trang web và phương thức liên lạc-->
+		<div id="coppyright">
+			<p>&copy; Copyright 2015. All Rights Reserved.<br>
+				<a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+		</div>
+		<div id="social">
+			<p>Connect with us:</p>
+			<p><a href="https://www.facebook.com/fwdfitclub"><img src="images/fblogo.png" alt="Facebook logo"></a>
+			<a href="https://twitter.com/fwdfitclub"><img src="images/twitterlogo.png" alt="Twitter Logo"></a></p>
+		</div>
+	</footer>
+	
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+

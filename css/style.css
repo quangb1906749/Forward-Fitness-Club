@@ -1,0 +1,555 @@
+/*Style sheet created by: Nguyen Thanh Quang - B1906749
+ 13/5/2021*/
+
+/*Định dạng màu cho phần body của website*/
+body {
+	background-color: #e64946;
+}
+
+/*Định dạng chiều rộng hình ảnh chiếm 100% chiều rộng của phần tử chứa nó giúp kích thước ảnh có thể thay đổi linh hoạt theo phần tử chứa nó*/
+img{
+	max-width: 100%
+}
+
+/*Style for Mobile Layout*/
+
+/* Định dạng phần có id container có chiều rộng 100%, trình duyệt tự động tính toán lề trái và lề phải*/
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Căn giữa ký tự trong thẻ header */
+header {
+	text-align: center;
+}
+
+/* Định dạng chữ trong thẻ nav có font-family lần lượt là Georgia, "Times New Roman" thuộc nhóm font serif; kích cỡ chữ 1.25em, kiểu chữ in đậm, căn giữa, lề trên thục lên 1.5em*/
+nav { 
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: -1.5em;
+}
+
+/* Định dạng các thẻ ul là con của thẻ nav có: padding có giá trị là 0, lề trên và lề dưới là 0.5em*/
+nav ul{
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/* Định dạng màu nền, border-radius để tạo độ bo góc, bỏ kí hiệu đầu dòng, căn lề và padding cho các thẻ li chứ trong thẻ nav*/ 
+ nav li{
+	background-color: #9d9d93;
+	border-radius: 2em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+ }
+ 
+ /* Định dạng chữ trong các thẻ a là con của thẻ li chứa trong thẻ nav thành màu trắng và bỏ gạch chân */
+ nav li a{
+	 color: #FFFFFF;
+	 text-decoration: none;
+ }
+ 
+ /* Hiển thị các phần tử có class mobile theo kiểu inline */
+ .mobile {
+	 display: inline;
+ }
+ 
+ /* Dấu các phần tử có class desktop */
+ .desktop{
+	 display: none;
+ }
+
+/*Định dạng thẻ main hiển thị theo kiểu block, định dạng font-family, font-size, căn lề trên, padding, bo góc, đặt màu nền và tự động tính min-height*/
+main {
+	display: block;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+	margin-top: 0.5em;
+	padding: 1em;
+	border-radius: 2em 0 2em 0;
+	background-color: #FFFFFF;
+	min-height: calc(100vh - 280px);
+}
+
+/* Định dạng màu nền, bo góc, màu chữ, kiểu chữ đậm, padding và bỏ gạch chân cho các thẻ a là thẻ con của main */
+main a{
+	background-color: #9d9d93;
+	border-radius: 1em;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 0.5em;
+	text-decoration: none;
+}
+
+/*Định dạng kích thước văn bản là .70em, căn giữa cho văn bản, căn lề trên 2em và màu chữ cho phần footer  */
+footer{
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+	color: #FFFFFF;
+}
+
+/* Định dạng màu và bỏ gạch chân cho thẻ a ở trong thẻ footer */
+footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+ /* Dấu phần tử có class tablet */ 
+ .tablet {
+	 display: none;
+ }
+
+/* Dấu phần tử có class equip */
+.equip{
+	display: none;
+}
+
+/* Định dạng kiểu chữ in nghiêng cho thẻ aside */
+aside {
+	font-style: italic;
+}
+
+/* Các thẻ input, select, and textarea được hiển thị theo kiểu block và căn lề dưới 1em */
+input, select, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
+/* Hiển thị kiểu block cho thẻ label */
+label {
+	display: block;
+}
+
+/* Bỏ ký hiệu đầu dòng cho các thẻ ul được chứa trong thẻ form */
+form ul{
+	list-style-type: none;
+}
+
+/* Hiển thị kiểu inline-block và căn lề phải 1em cho các phần tử có class chkbx */
+.chkbx {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+/*Định dạng phần tử có class video */
+.video {
+	padding: 1em;
+	text-align: center;
+}
+
+/*Định dạng phần tử video*/
+video {
+	border: 0.5em ridge #FFFFFF;
+	height: auto;
+	max-width: 100%;
+}
+
+/* Cho các phần tử có id là copyright nổi qua trái trình duyệt và căn lề trên là 2em, đặt độ rộng phần tử là 80% */
+#copyright {
+	float: left;
+	margin-top: 2em;
+	width: 80%;
+}
+
+/*Đặt độ rộng và căn lề giữa cho phần tử có id là social */
+#social {
+	width: 20%;
+	margin: 0 auto;
+}
+
+/*Padding các ảnh bên trong phần tử có id social 0.5em  */
+#social img {
+	padding: 0.5em;
+}
+
+/*Định nghĩa chế độ xem kiểu máy tính bảng cho các thiết bị có kích thước tối thiểu 660px*/
+
+@media only screen and (min-width: 660px) {
+	
+	/* Hiển thị các liên kết trên một hàng ngang */
+	 nav li{
+		display: inline;
+		float: left;
+		margin-left: 1%;
+		margin-right: 1%;
+		padding-left: 0;
+		padding-right: 0;
+		width: 18%;
+		white-space: nowrap;
+		border-radius: 0;
+		background-color: transparent;
+	}
+	
+	/* Định dạng độ rộng, clear trái và căn lề trên, trái, phải và overflow cho phần tử main */
+	main{
+		width: 95%;
+		clear: left;
+		margin-top: -0.3em;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 0;
+		overflow: auto;
+	}
+
+	/* Dấu các phần tử có class mobile */
+	 .mobile {
+		display: none;
+	}
+	
+	/* Hiển thị các phần tử có class desktop theo kiểu inline */ 
+	.desktop{
+		display: inline;
+	}
+	
+	/* Các phần tử có class equip hiển thị theo kiểu inline, nổi qua trái và căn lề phải 1.5em */
+	.equip{
+		display: inline;
+		float: left;
+		margin-right: 1.5em;
+	}
+	
+	/* Hiển thị các mục danh sách có class items theo kiểu block và đặt vị trí là inside */
+	.items {
+		display: block;
+		list-style-position: inside;
+	}
+	
+	/* Hiển thị các phần tử có class tablet theo kiểu block, căn lề trên -3em và lề dưới -1em */
+	.tablet{
+		display: block;
+		margin-top: -3em;
+		margin-bottom: -1em;
+	}
+	
+	/* Định dạng kiểu chữ in đậm và căn lề trên 0.7 em cho thẻ dt */
+	dt {
+		font-weight: bold;
+		margin-top: 0.7em;
+	}
+	
+	/* Căn giữa cho thẻ h1 */
+	h1 {
+		text-align: center;
+	}
+	
+	/* Định dạng màu nền, kiểu hiển thị inline, chiều rộng, chiều cao, căn lề và padding cho thẻ img bên trong thẻ figure */
+	figure img{
+		background-color: #1D1D1C;
+		display: inline;
+		height: 8em;
+		width: 28%;
+		margin: 1%;
+		padding: 1%;
+	}
+	
+	/* Định dạng màu nền, padding, bỏ gạch chân cho các thẻ a bên trong thẻ figure */
+	figure a{
+		background-color: transparent;
+		padding:0;
+		text-decoration: none;
+	}
+	
+	/* Định dạng padding-bottom 3em cho thẻ section */
+	section {
+		padding-bottom: 3em;
+	}
+	
+	/* Căn trái cho các thẻ h1 bên trong thẻ section */
+	section h1 {
+		text-align: left;
+	}
+	
+	/* Định dạng màu nền, màu chữ, font-weight, padding, và gạch chân cho các thẻ a bên trong thẻ section */
+	section a {
+		background-color: transparent;
+		color: #1D1D1C;
+		font-weight: normal;
+		padding: 0;
+		text-decoration: underline;
+	}
+	
+	/* Định dạng màu nền, màu chữ, padding và gạch chân cho các phần tử có class contact */
+	.contact {
+		background-color: transparent;
+		color: #1D1D1C;
+		padding: 0;
+		text-decoration: underline;
+	}
+	
+	/* Định dạng màu nền, nổi qua trái, căn lề, padding, căn giữa ký tự và độ rộng cho thẻ article */
+	article {
+		background-color: #C1D9CA;
+		float: left;
+		margin: 0.5%;
+		padding: 0.5%;
+		text-align: center;
+		width: 31%;
+	}
+	
+	/* Định dạng kiểu đường viền, căn lề trái và lề phải cho thẻ img là con của thẻ article bên trong thẻ main */
+	main article img {
+		border: solid 0.1em #1D1D1C;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	/* Định dạng màu chữ, căn lề trên, padding, căn trái ký tự cho các thẻ p là con của thẻ article bên trong thẻ main */
+	main article p {
+		color: #000000;
+		margin-top: 2%;
+		padding: 1%;
+		text-align: left;
+	}
+	
+	/* Căn trái ký tự cho các thẻ ul bên trong thẻ article là con của thẻ main */
+	main article ul {
+		text-align: left;
+	}
+	
+	/* Định dạng màu nền, bo góc, đổ bóng đường viền, padding và căn lề cho phần tử aside */
+	aside {
+		background-color: #FFFFFF;
+		border-radius: 0 5em 5em 5em;
+		box-shadow: 1em 1em 1em #4C4F4D;
+		padding: 1.5em;
+		margin: 1em;
+	}
+	
+	/* Định dạng kiểu đường viền, gộp các đường viền, căn lề trái, lề phải và độ rộng của thẻ table */
+	table {
+		border: 0.1em solid #000000;
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+	
+	/* Định dạng kiểu đường viền và padding cho các thẻ th và td*/
+	th, td {
+		border: 0.1em solid #000000;
+		padding: 1em;
+	}
+	
+	/* Định dạng màu nền và màu chữ cho các thẻ th */
+	th {
+		background-color: #1D1D1C;
+		color: #FFFFFF;
+	}
+	
+	/* Định dạng cỡ chữ, in đậm, và padding-bottom cho thẻ caption */
+	caption {
+		font-size: 1.5em;
+		font-weight: bold;
+		padding-bottom: 0.5em;
+	}
+	
+	/* Cho thẻ label nổi qua trái và định dạng padding-right, căn phải ký tự và đặt độ rộng cho thẻ label */
+	label {
+		float: left;
+		padding-right: 0.5em;
+		text-align: right;
+		width: 10em;
+	}
+	
+	/* Căn lề trái cho phần tử có class btn */
+	.btn {
+		margin-left: 12em;
+	}
+}
+
+/*Định nghĩa chế độ xem kiểu máy tính cho các thiết bị có kích thước tối thiểu 830px*/
+
+@media only screen and (min-width: 830px) {
+	
+	/* Định dạng màu nền cho phần tử có id container */
+	#container {
+		background-color: #e64946;
+		width: 80%;
+	}
+	
+	/*Căn trái ký tự cho thẻ header */
+	header {
+		text-align: left;
+	}
+	
+	/* Cho thẻ nav nổi qua phải và căn lề trên -7em, lề phải 3em, lề dưới 0, đặt độ rộng 65% */
+	nav {
+		float: right;
+		margin-top: -7em;
+		margin-right: 3em;
+		margin-bottom: 0;
+		width: 65%;
+	}
+	
+	/* Đặt margin là 0, padding-left và padding-right là 0.50% cho các thẻ ul bên trong thẻ nav */
+	nav ul{
+		margin: 0;
+		padding-left: 0.50%;
+		padding-right: 0.50%;
+	}
+	
+	/* Căn lề, padding và đặt độ rộng cho các thẻ li bên trong thẻ nav */
+	nav li{
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+		width: 20%;
+	}
+	
+	/* Định dạng padding, đổ bóng ký tự và hiển thị theo kiểu inline-block cho các thẻ a bên trong thẻ li là con của thẻ nav */
+	nav li a{
+		display: inline-block;
+		padding: 0.7em;
+		text-shadow: 0.2em 0.1em #3D3D35;
+	}
+	
+	/* Định dạng các pseudo-class */
+	nav li a:link {
+		color: #FFFFFF;
+	}
+	
+	nav li a:visited {
+		color: #CCCCFF;
+	}
+	
+	nav li a:hover {
+		color: #9D9D93;
+		font-style: italic;
+	}
+	
+	nav li a:active{
+		color: #6600cc;
+	}
+	
+	/*Định dạng màu nền cho thẻ main*/
+	main{
+		background-color: #FFFFFF;
+	}
+	
+	/*Định dạng màu chữ, căn lề trái, căn lề phải và đặt độ rộng cho các thẻ p bên trong thẻ main*/
+	main p {
+		color: #000000;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+	
+	/* Định dạng font family, màu chữ, khoảng cách giữa các dòng, độ đậm của chữ cho các thẻ h1 */
+	h1 {
+		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+		color: #000;
+		line-height: 1.3;
+		font-weight: 700;
+	}
+	
+	/* Định dạng chiều cao và độ suốt cho hình ảnh của thẻ img bên trong thẻ figure */
+	figure img {
+		height: 15em;
+		opacity: 0.7;
+	}
+	
+	/* Loại bỏ độ trong suốt khi di chuột lên hình ảnh */
+	figure img:hover {
+		opacity: 1;
+	}
+	
+	/*Định dạng ảnh nền cho thẻ body */
+	body {
+		background-image: url("../images/blackBackground.jpg");
+		background-position: left top;
+		background-size: auto;
+		background-repeat: repeat;
+		background-attachment: scroll;/*Ảnh nền sẽ scroll cùng với trang*/
+	}
+	
+	/* Định dạng màu nền, căn lề trên, padding và overflow cho thẻ footer */
+	footer {
+		background-color: #2A2A2A;
+		margin-top: -0.2em;
+		padding: 2em;
+		overflow: auto;
+	}
+	
+	/* Định dạng màu chữ, căn lề trái và padding-bottom cho thẻ section */
+	section {
+		color: #000000;
+		margin-left: 1em;
+		padding-bottom: 5em;
+	}
+	
+	/* Định dạng màu chữ cho thẻ a bên trong thẻ section */
+	section a {
+		color: #000000;
+	}
+	
+	/* Định dạng lề trái là 0 cho thẻ p bên trong thẻ section */
+	section p {
+		margin-left: 0;
+	}
+	
+	/* Định dạng màu chữ cho các thẻ h2 bên trong thẻ main */
+	main h2 {
+		color: #000000;
+	}
+	
+	/* Định dạng màu chữ cho phần tử có class contact */
+	.contact {
+		color: #000000;
+	}
+	
+	/* Định dạng màu chữ cho thẻ h2 bên trong thẻ article là con của thẻ main */
+	main article h2 {
+		color: #000000;
+	}
+	
+	/* Định dạng màu nền và đặt độ rộng cho thẻ table */
+	table {
+		background-color: #FFFFFF;
+		width: 85%;
+	}
+	
+	/* Định dạng màu chữ cho thẻ caption */
+	caption {
+		color: #FFFFFF;
+	}
+	
+	/*Định dạng màu nền và padding cho thẻ form */
+	form {
+		background-color: #FFFFFF;
+		padding: 1em;
+	}
+	
+	/* Định dạng màu chữ cho các thẻ p bên trong thẻ form */
+	form p {
+		color: #000000;
+	}
+	/*Phần tử có id social nổi qua phải và đặt độ rộng cho phần tử này là 20% */
+	#social {
+		float: right;
+		width: 20%;
+		margin: 0 auto;
+	}
+}
+
+/*Căn lề dưới và định dạng vị trí inside cho các phần tử bên trong thẻ ul*/
+ul {
+	margin-bottom: 50px;
+	list-style-position: inside;
+}
+
+/*Định dạng kiểu in đậm cho thẻ dt*/
+dt{
+	font-weight: bold;
+}
+/*padding-bottom cho thẻ dd*/
+dd{
+	padding-bottom: 20px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- Nguyen Thanh Quang - B1906749
+	13/5/2021-->
+<html lang="en"> <!--Khai báo ngôn ngữ của trang web là tiếng Anh-->
+<head>
+	<title>Forward Fitness Club</title> <!--Tiêu đề trang web-->
+	<meta charset="utf-8"> <!--Sử dụng bộ mã Unicode-->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--thiết lập cho trang web hiển thị tương ứng với kích thước của từng thiết bị khác nhau. Đặt chiều rộng của trang web theo chiều rộng màn hình của thiết bị. Và thiết lập mức phóng ban đầu-->
+	<meta name="description" content="Forward Fitness Club is an elite fitness center dedicated to helping our clients achieve their fitness and nutrition goals. We provide state-of-the-art fitness equipment, group fitness classes, and nutrition planning.">
+	<!--Meta description mô tả nội dung của một trang web. Các công cụ tìm kiếm hiển thị meta description trong kết quả khi nó chứa các từ khóa đang được người dùng truy vấn.-->
+	<link rel="stylesheet" href="css/style.css"> <!--Liên kết đến tập tin css-->
+</head>
+<body>
+
+	<div id="container"> <!--Sử dụng container để định dạng phần body của trang web-->
+	
+	<!--Sử dụng header để hiển thị logo trang web-->
+	<header>
+		<a href="index.html"><img src="images/ffc_logo.png" alt="Forward Fitness Club Logo"></a>
+	</header>
+	
+	<!--Sử dụng nav để hiển các liên kết đến các trang khác trong website-->
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="class.html">Classes</a></li>
+			<li><a href="nutrition.html">Nutrition</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	
+	<!-- Sử dụng vùng main để thêm nội dung chính của trang web-->
+	<main>
+		<!--Poster của trang web sẽ được hiển thị cho đến khi người dùng nhấn nút play video trên poster-->
+		<div class="video">
+		<video controls poster="images/homeBanner.jpg">
+			<source src="media/ffc_vid.mp4" type="video/mp4">
+			<p>Your browser does not support the video tag.</p>
+		</video>
+		</div>
+		<!--Sử dụng các thẻ section để chia nội dung chính thành nhiều phần để tiện định dạng. Trong 3 phần đầu (Weights, Cardio, Personal Training có thêm ảnh và sử dụng thẻ ul để khai trình bày danh sách không thứ tự-->
+		<section>	
+		<h1>Weights</h1>
+		<img class="equip" src="images/equipment1.jpg" alt="Weight Equipment">
+		<p>Our facility includes a weight training area with several weight options. Build lean
+		muscle with weights and improve your core with weight training.</p>
+		<ul class="items">
+			<li>Dumbells</li>
+			<li>Mettle bells</li>
+			<li>Barbells</li>
+		</ul>
+		</section>
+		<section>
+		<h1>Cardio</h1>
+		<img class="equip" src="images/equipment2.jpg" alt="Cardio Equipment">
+		<p>Burn fat through cardio workouts. If you need to lose 20 lbs or more, include at least 30 minutes of cardio each day. We have several equipment choices for your workout.</p>
+		<ul class="items">
+			<li>Treadmills</li>
+			<li>Elliptical Machines</li>
+			<li>Exercise Bikes</li>
+		</ul>
+		</section>
+		
+		<section>
+		<h1>Personal Training</h1>
+		<img class="equip" src="images/equipment3.jpg" alt="Personal Training">
+		<p>Our certified personal trainers work with you one on one to help you obtain your fitness goals. Our personal trainers keep you motivated and push you farther than you would push yourself. When you feel like you cannot do one more rep, they tell you that you can. Personal training has many benefits.</p>
+		<ul class="items"> 
+			<li>Accountability</li>
+			<li>Personalized Program</li>
+			<li>Consistent Support and Motivation</li>
+		</ul>
+		</section>
+		
+		<!--Phần "common exercises" chỉ hiển thị trên thiết bị máy tính và máy tính bảng. Phần này có sử dụng thẻ dl để khai báo danh sách định nghĩa-->
+		<section class="tablet">
+		<h1>Common Exercises</h1>
+		<p>The following are common exercises that we encourage our clients to do as part of their daily exercise routine.</p>
+		<dl>
+			<dt>Burpee</dt>
+			<dd>Burpees are a great, full body exercise to increase your strength and endurance. Begin in a standing position, drop into a squat
+			and extend your hands forward, kick your feet back and then forward again quickly, and then jump up from a squatted position.
+			<br>
+			<button onclick="burpees()" id="burpee">See example</button> <!--Mở trang burpees.html-->
+			</dd>
+
+			<dt>Plank</dt>
+			<dd>Planks build your core strength. To perform a plank, get in a push up position and rest your forearms on the floor.
+			Hold the position as long as you can.
+			<br>
+			<button onclick="plank()" id="plank">See example</button> <!--Mở trang plank.html-->
+			</dd>
+
+			<dt>Mountain Climber</dt>
+			<dd>Mountain climbers are a good cardio exercise. Place your hands on the floor in a push up position, then bring one
+			knee up to your chest and then switch as quickly as you can (as though you are climbing a mountain).
+			<br>
+			<button onclick="mtnClimber()" id="mc">See example</button><!--Mở trang mtn.html-->
+			</dd>
+			</dl>
+			<p>For more information about how to stay active, visit <a href=”http://www.fitness.gov/be-active/ways-to-be-active/”>fitness.gov</a>.</p><!--Thêm liên kết tuyệt đối-->
+		</section>
+	</main>
+	
+	<footer> <!--Phần footer hiển thị bản quyền trang web và phương thức liên lạc-->
+		<div id="coppyright">
+			<p>&copy; Copyright 2015. All Rights Reserved.<br>
+				<a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+		</div>
+		<div id="social">
+			<p>Connect with us:</p>
+			<p><a href="https://www.facebook.com/fwdfitclub"><img src="images/fblogo.png" alt="Facebook logo"></a>
+			<a href="https://twitter.com/fwdfitclub"><img src="images/twitterlogo.png" alt="Twitter Logo"></a></p>
+		</div>
+	</footer>
+	
+	</div>
+	<!--Scripts để mở các trang web example-->
+	<script src="scripts/utilities.js"></script>
+	<script src="scripts/seeExample.js"></script>
+</body>
+</html>
